@@ -38,4 +38,7 @@ parser.add_argument('--end_epoch', type=int, default=100, help="flag to indicate
 FLAGS = parser.parse_args()
 
 if __name__ == '__main__':
-    training_procedure(FLAGS)
+    from plot_tsne import main
+    main(FLAGS)
+    #training_procedure(FLAGS)
+
